@@ -601,13 +601,13 @@ a:active {
     padding: var(--footer-padding);
 }
 
-.nabar-menu {
+.navbar-menu {
     float: right;
 }
 
 .nav {
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     text-align: center;
     list-style: none;
 }
