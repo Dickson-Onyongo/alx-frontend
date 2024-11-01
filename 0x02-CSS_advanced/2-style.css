@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    display: none;
+    color: #161616;
 }
 
 .visually-hidden {
@@ -14,9 +14,9 @@ a {
 }
 
 .card-category {
-    color: #d73953;
+    color: #D73953;
 }
 
 .section-tagline {
-    color: #d73953;
+    color: #D73953;
 }
