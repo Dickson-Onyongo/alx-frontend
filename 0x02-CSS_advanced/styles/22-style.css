@@ -670,7 +670,7 @@ ul.row {
 }
 
 [dat-section-theme="dark"] {
-    --text-color:white;
+    --text-color: white;
     --section-title-color: white;
     background-color: var(--color-black);
 }
