@@ -652,7 +652,7 @@ ul.row {
   padding: var(--footer-padding);
 }
 
-.row .col-1-2 .footer-copyright {
+.footer-copyright {
     margin: 0;
     font-size: var(--font-size-small);
     color: var(--text-color);
