@@ -661,6 +661,13 @@ ul.row {
 .footer-address {
     color: var(--text-color);
 }
+
+.social-link {
+    display: block;
+}
+.social-link > svg {
+    fill: var(--text-color);
+}
 /*creates a new row after each row instance*/
 .row::after {
     content: "";
@@ -677,10 +684,4 @@ ul.row {
     --text-color:var(--color-white);
     --section-title-color:var(--color-white);
     background-color: var(--color-black);
-}
-.social-link {
-    display: block;
-}
-.social-link svg {
-    fill: var(--text-color);
 }
