@@ -664,9 +664,9 @@ ul.row {
 .col-1-3 {
     width: 33.33%;
 }
-
+/*==----Services---*/
 .card-services .card-title {
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 .card-services a {
@@ -682,7 +682,7 @@ ul.row {
 .col-1-2 {
     width: 50%;
 }
-
+/*----Footer section-*/
 .footer {
   padding: var(--footer-padding);
 }
