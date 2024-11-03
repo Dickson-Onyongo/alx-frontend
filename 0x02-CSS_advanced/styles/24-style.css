@@ -665,6 +665,20 @@ ul.row {
     width: 33.33%;
 }
 
+.card-title .card-services {
+  margin: 0 0 0 0;
+}
+
+.card-services a {
+  display: block;
+  padding: 2rem;
+  background-color: var(--color-light-grey);
+}
+.card-services a:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+}
 .col-1-2 {
     width: 50%;
 }
@@ -710,4 +724,4 @@ ul.row {
     --section-title-color:var(--color-white);
     background-color: var(--color-black);
     --button-color:var(--color-white);
-}
+} 
