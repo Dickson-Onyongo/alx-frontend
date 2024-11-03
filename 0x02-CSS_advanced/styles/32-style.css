@@ -1,7 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
-   ============================================= */
+   ========================================================================== */
 
 /**
  * 1. Correct the line height in all browsers.
@@ -14,7 +14,7 @@
   }
   
   /* Sections
-     ===================================================== */
+     ========================================================================== */
   
   /**
    * Remove the margin in all browsers.
@@ -290,7 +290,7 @@
   
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
-    appearance: textfield; /* Add the standard property 'appearance' for compatibility */
+    appearance: textfield; /* Add the standard property 'appearance' */
     outline-offset: -2px; /* 2 */
   }
   
@@ -429,6 +429,9 @@
   --header-logo-link-top: -1rem;
   --header-logo-link-left: 0;
   
+  /*================== transtion ================*/
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
   }
   
   *, *:before, *:after {
@@ -503,6 +506,8 @@
       color: var(--button-hover-color);
       text-decoration: var(--button-hover-text-decoration);
       background-color: var(--button-hover-background);
+      transition-duration: var(--transition-duration);
+      transition-property: color, background-color; 
   }
   
   .visually-hidden {
@@ -592,6 +597,7 @@
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
   }
   
   .nav .nav-item:hover .nav-link::before {
@@ -714,11 +720,21 @@
     overflow: hidden;
   }
   
+  .card-work:hover .card-outer {
+    transform: scale(0.95);
+  }
+  
   .card-work .card-image img {
     height: 30rem;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+  }
+  
+  .card-work:hover .card-image {
+    transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+  
   }
   
   .card-work .card-inner {
@@ -727,10 +743,12 @@
     left: -0.1rem;
     right: -0.1rem;
     z-index: 1;
+    transition: var(--transition-duration) var(--transition-cubic-bezier)
+  ;
   }
   
   .card-work:hover .card-inner {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgb(0,0,0,0.7);
   }
   
   .card-work .card-title {
@@ -747,7 +765,7 @@
     padding-top: 45%;
   }
   
-  .card-work .card-title a::after {
+.card-work .card-title a::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -758,4 +776,19 @@
   
 .card-work:hover .card-title {
     opacity: 1;
+  }
+  
+  /*============= Testimonial ==================*/
+.card-testimonial .card-quote {
+    position: relative;
+  }
+  
+.card-testimonial .card-quote::before {
+    content: "\201C";
+    position: absolute;
+    top:-4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
   }

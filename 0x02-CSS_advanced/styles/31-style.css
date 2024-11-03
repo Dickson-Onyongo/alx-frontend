@@ -1,7 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
-   ============================================= */
+   ========================================================================== */
 
 /**
  * 1. Correct the line height in all browsers.
@@ -14,7 +14,7 @@
   }
   
   /* Sections
-     ===================================================== */
+     ========================================================================== */
   
   /**
    * Remove the margin in all browsers.
@@ -290,7 +290,7 @@
   
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
-    appearance: textfield; /* Add the standard property 'appearance' for compatibility */
+    appearance: textfield; /* Add the standard property 'appearance' */
     outline-offset: -2px; /* 2 */
   }
   
@@ -730,7 +730,7 @@
   }
   
   .card-work:hover .card-inner {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgb(0,0,0,0.7);
   }
   
   .card-work .card-title {
@@ -756,6 +756,20 @@
     content: "";
   }
   
-.card-work:hover .card-title {
+  .card-work:hover .card-title {
     opacity: 1;
+  }
+  
+  /*==== Testimonial =======*/
+.card-testimonial .card-quote {    position: relative;
+}
+
+.card-testimonial .card-quote::before {
+   content: "\201C";
+    position: absolute;
+    top:-4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
   }
